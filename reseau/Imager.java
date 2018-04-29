@@ -25,7 +25,7 @@ public class Imager {
         
         for(int i = 0; i < image.length; i++) {
             for(int j = 0; j < image[i].length; j++)
-                image[i][j] = (float) rst.getSample(i, j, 0);}
+                image[i][j] = (float) (rst.getSample(j, i, 0) / 127.5) - 1;}
         
         return image;
     }

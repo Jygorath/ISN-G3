@@ -3,7 +3,7 @@ package reseau.neurones;
 
 
 //Surclasse de neurone (pondérée)
-class NeuronePondéré {
+public class NeuronePondéré {
 	
     //Méthode qui calcule la somme pondérée des entrées et des poids.
     protected float somme(float[] e, float[] p) {
